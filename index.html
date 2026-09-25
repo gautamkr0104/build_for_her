@@ -1,0 +1,1249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Class 9 English (Kaveri) — 100 Marks Mock Test</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+:root {
+  --main-bg: #fffbfd;
+  --text-main: #2d232e;
+  --text-muted: #6b5c6e;
+  --rose-pink: #f472b6;
+  --soft-blush: #fce7f3;
+  --mj-black: #1f1924;
+  --mj-gold: #d97706;
+  --sparkle-purple: #8b5cf6;
+  --border-color: #f3e8ff;
+  --ok: #16a34a;
+  --bad: #dc2626;
+  --shadow-soft: 0 10px 25px -5px rgba(244, 114, 182, 0.12), 0 8px 10px -6px rgba(0, 0, 0, 0.04);
+  --radius: 16px;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  padding: 12px;
+  background: #fbf7f9;
+  background-image: radial-gradient(#f472b6 0.6px, transparent 0.6px), radial-gradient(#8b5cf6 0.6px, #fbf7f9 0.6px);
+  background-size: 24px 24px;
+  color: var(--text-main);
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  line-height: 1.6;
+}
+
+.app-wrapper {
+  max-width: 850px;
+  margin: 12px auto;
+  padding: 24px;
+  background: var(--main-bg);
+  border-radius: 24px;
+  box-shadow: 0 20px 50px rgba(139, 92, 246, 0.08), 0 0 0 1px rgba(244, 114, 182, 0.15);
+}
+
+header.hd {
+  text-align: center;
+  padding-bottom: 20px;
+  border-bottom: 2px dashed #f3e8ff;
+  margin-bottom: 20px;
+}
+
+.theme-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: linear-gradient(135deg, #fce7f3, #f3e8ff);
+  color: #9333ea;
+  font-size: 0.8rem;
+  font-weight: 700;
+  padding: 6px 14px;
+  border-radius: 20px;
+  margin-bottom: 12px;
+  border: 1px solid #f472b6;
+}
+
+header.hd h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--mj-black);
+  margin: 0 0 6px 0;
+  background: linear-gradient(135deg, #2d232e 30%, #8b5cf6 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.subtitle {
+  font-size: 0.88rem;
+  color: var(--text-muted);
+  margin: 0 0 10px 0;
+  font-style: italic;
+}
+
+.syllabus-line {
+  font-size: 0.78rem;
+  color: #9333ea;
+  background: #faf5ff;
+  border: 1px dashed #e9d5ff;
+  display: inline-block;
+  padding: 5px 14px;
+  border-radius: 20px;
+  margin-bottom: 14px;
+}
+
+.meta {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.meta-item {
+  background: #ffffff;
+  padding: 6px 14px;
+  border-radius: 12px;
+  border: 1px solid var(--border-color);
+  font-size: 0.85rem;
+}
+
+.timer-box {
+  background: linear-gradient(135deg, #fef2f2, #ffe4e6);
+  border: 1px solid #fecdd3;
+  color: #e11d48;
+  font-weight: 800;
+}
+
+/* progress */
+.progress-wrap {
+  margin-top: 14px;
+  background: #ffffff;
+  border: 1px solid var(--border-color);
+  border-radius: 14px;
+  padding: 10px 14px;
+}
+.progress-label {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--text-muted);
+  margin-bottom: 6px;
+}
+.progress-track {
+  height: 10px;
+  background: #f3e8ff;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.progress-fill {
+  height: 100%;
+  width: 0%;
+  background: linear-gradient(90deg, var(--rose-pink), var(--sparkle-purple));
+  border-radius: 8px;
+  transition: width 0.4s ease;
+}
+
+nav.tabs {
+  display: flex;
+  gap: 8px;
+  margin: 18px 0 24px;
+  overflow-x: auto;
+  padding: 4px;
+}
+
+nav.tabs button {
+  flex: 1;
+  min-width: 140px;
+  padding: 10px 12px;
+  border: 1px solid var(--border-color);
+  background: #ffffff;
+  color: var(--text-muted);
+  border-radius: 14px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+nav.tabs button.active {
+  background: linear-gradient(135deg, var(--mj-black), #3b0764);
+  color: #ffffff;
+  border-color: var(--mj-black);
+}
+
+section.sec { display: none; }
+section.sec.show { display: block; }
+
+h2.sect {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.35rem;
+  color: var(--mj-black);
+  margin: 0 0 6px 0;
+}
+
+p.sub { font-size: 0.85rem; color: var(--text-muted); margin-bottom: 18px; }
+
+h3.part {
+  color: #8b5cf6;
+  font-size: 1.1rem;
+  margin-top: 24px;
+  border-left: 4px solid var(--rose-pink);
+  padding-left: 10px;
+}
+
+.passage-card {
+  background: linear-gradient(135deg, #ffffff 0%, #fcf7fa 100%);
+  border: 1px solid #fbcfe8;
+  border-left: 5px solid var(--rose-pink);
+  border-radius: var(--radius);
+  padding: 18px;
+  margin-bottom: 20px;
+  box-shadow: var(--shadow-soft);
+}
+
+.passage-header {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  color: #be185d;
+  margin-bottom: 8px;
+}
+
+.passage-body { font-size: 0.92rem; text-align: justify; }
+
+.q-card {
+  background: #ffffff;
+  border: 1px solid #f3e8ff;
+  border-radius: var(--radius);
+  padding: 16px;
+  margin-bottom: 16px;
+  position: relative;
+}
+
+.q-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+
+.topic-chip {
+  font-size: 0.68rem;
+  font-weight: 700;
+  color: #9333ea;
+  background: #f3e8ff;
+  border-radius: 10px;
+  padding: 3px 10px;
+  white-space: nowrap;
+}
+
+.marks-chip {
+  font-size: 0.68rem;
+  font-weight: 800;
+  color: #b45309;
+  background: #fef3c7;
+  border: 1px solid #fde68a;
+  border-radius: 10px;
+  padding: 3px 10px;
+  white-space: nowrap;
+}
+
+.q-title { font-weight: 600; font-size: 0.95rem; color: var(--mj-black); margin-bottom: 12px; }
+
+.opts { display: grid; gap: 8px; }
+
+.opt-label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 12px;
+  background: #faf5ff;
+  border: 1.5px solid #f3e8ff;
+  border-radius: 12px;
+  cursor: pointer;
+  font-size: 0.88rem;
+}
+
+.opt-label:has(input[type="radio"]:checked) {
+  background: linear-gradient(135deg, #fce7f3, #f3e8ff);
+  border-color: var(--rose-pink);
+  color: #831843;
+  font-weight: 600;
+}
+
+textarea {
+  width: 100%;
+  min-height: 120px;
+  padding: 12px;
+  border: 1.5px solid #e9d5ff;
+  border-radius: 12px;
+  background: #faf8fc;
+  font-family: inherit;
+  font-size: 0.9rem;
+  resize: vertical;
+}
+textarea:focus { outline: 2px solid var(--rose-pink); outline-offset: 1px; }
+
+.q-tools {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  margin-top: 8px;
+  flex-wrap: wrap;
+}
+
+.wordcount {
+  font-size: 0.74rem;
+  color: var(--text-muted);
+  font-weight: 600;
+}
+.wordcount.warn { color: var(--mj-gold); }
+.wordcount.good { color: var(--ok); }
+
+button.ai-check {
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: #fff;
+  background: linear-gradient(135deg, var(--sparkle-purple), #6d28d9);
+  border: none;
+  border-radius: 10px;
+  padding: 7px 14px;
+  cursor: pointer;
+}
+button.ai-check:disabled { opacity: 0.6; cursor: wait; }
+
+.instant-feedback {
+  display: none;
+  margin-top: 10px;
+  background: #faf5ff;
+  border: 1px dashed #e9d5ff;
+  border-radius: 12px;
+  padding: 10px 12px;
+  font-size: 0.84rem;
+  white-space: pre-wrap;
+}
+.instant-feedback.show { display: block; }
+
+.navbtns {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 24px;
+  padding-top: 16px;
+  border-top: 2px dashed #f3e8ff;
+}
+
+button.pr {
+  padding: 10px 20px;
+  border-radius: 12px;
+  font-weight: 700;
+  cursor: pointer;
+  border: none;
+}
+button.pr:disabled { opacity: 0.45; cursor: not-allowed; }
+
+.btn-primary { background: linear-gradient(135deg, var(--sparkle-purple), #6d28d9); color: #fff; }
+.btn-secondary { background: #ffffff; color: var(--text-muted); border: 1px solid var(--border-color); }
+.btn-sparkle { background: linear-gradient(135deg, #ec4899, #8b5cf6); color: #fff; width: 100%; padding: 12px; font-size: 1rem; }
+.btn-mini { padding: 8px 16px; font-size: 0.82rem; border-radius: 10px; cursor: pointer; border: 1px solid var(--border-color); background: #fff; color: var(--text-muted); font-weight: 700; }
+
+.submit-card { text-align: center; background: #fff; border: 2px solid #fbcfe8; border-radius: 20px; padding: 24px; }
+.score-banner { text-align: center; background: linear-gradient(135deg, var(--mj-black), #3b0764); color: #fff; padding: 20px; border-radius: 18px; margin-bottom: 16px; }
+.big { font-family: 'Playfair Display', serif; font-size: 2.8rem; color: #f472b6; }
+.grade-line { font-size: 1.05rem; margin-top: 6px; }
+
+.breakdown {
+  background: #fff;
+  border: 1px solid var(--border-color);
+  border-radius: 16px;
+  padding: 14px 16px;
+  margin-bottom: 16px;
+}
+.breakdown table { width: 100%; border-collapse: collapse; font-size: 0.86rem; }
+.breakdown td { padding: 6px 8px; border-bottom: 1px dashed #f3e8ff; }
+.breakdown td:last-child { text-align: right; font-weight: 800; }
+.breakdown tr:last-child td { border-bottom: none; color: var(--sparkle-purple); font-weight: 800; }
+
+.ai-eval-box {
+  background: #ffffff;
+  border: 1px solid #e9d5ff;
+  border-radius: 16px;
+  padding: 16px;
+  margin-top: 16px;
+  text-align: left;
+  line-height: 1.6;
+  white-space: pre-wrap;
+}
+
+.review-q {
+  background: #ffffff;
+  border: 1px solid var(--border-color);
+  border-radius: 14px;
+  padding: 14px;
+  margin-bottom: 12px;
+  font-size: 0.88rem;
+}
+.review-q .rq-title { font-weight: 700; margin-bottom: 8px; }
+.review-q .yours { margin: 3px 0; }
+.review-q .key-note {
+  margin-top: 8px;
+  padding: 8px 10px;
+  border-radius: 10px;
+  background: #f0fdf4;
+  border: 1px solid #bbf7d0;
+  font-size: 0.82rem;
+}
+.review-q.is-correct { border-left: 5px solid var(--ok); }
+.review-q.is-wrong { border-left: 5px solid var(--bad); }
+.tag-ok { color: var(--ok); font-weight: 800; }
+.tag-bad { color: var(--bad); font-weight: 800; }
+
+.written-review {
+  background: #ffffff;
+  border: 1px solid var(--border-color);
+  border-left: 5px solid var(--sparkle-purple);
+  border-radius: 14px;
+  padding: 14px;
+  margin-bottom: 12px;
+  font-size: 0.88rem;
+}
+.written-review .score-pill {
+  display: inline-block;
+  background: linear-gradient(135deg, #fce7f3, #f3e8ff);
+  border: 1px solid var(--rose-pink);
+  color: #831843;
+  font-weight: 800;
+  border-radius: 12px;
+  padding: 3px 12px;
+  font-size: 0.8rem;
+}
+.written-review .fb { margin-top: 8px; white-space: pre-wrap; }
+
+.section-divider {
+  font-family: 'Playfair Display', serif;
+  color: var(--mj-black);
+  font-size: 1.05rem;
+  margin: 22px 0 10px;
+}
+
+.result-actions {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 18px;
+  flex-wrap: wrap;
+}
+
+.spinner {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: 3px solid rgba(255,255,255,.3);
+  border-radius: 50%;
+  border-top-color: #fff;
+  animation: spin 1s ease-in-out infinite;
+  vertical-align: middle;
+  margin-right: 8px;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+.timer-box.flash { animation: flashred 1s infinite; }
+@keyframes flashred {
+  50% { background: #fecdd3; }
+}
+
+@media print {
+  nav.tabs, .navbtns, .progress-wrap, .theme-badge { display: none !important; }
+  section.sec { display: block !important; }
+}
+</style>
+</head>
+<body>
+<div class="app-wrapper">
+  <header class="hd">
+    <div class="theme-badge">
+      <span class="badge-icon">💖</span> K-Drama Vibes &amp; King of Pop Energy ✨
+    </div>
+    <h1>English — Class IX Mock Examination</h1>
+    <p class="subtitle">"Study like Krishtakka, create like Sentila, and heal the world!" 👑🌸</p>
+    <div class="syllabus-line">📘 NCERT <b>Kaveri</b> Units 1–4 &nbsp;·&nbsp; Reading &nbsp;·&nbsp; Grammar &amp; Writing &nbsp;·&nbsp; Literature</div>
+    <div class="meta">
+      <div class="meta-item"><span class="meta-label">Max Marks:</span> <b>100</b></div>
+      <div class="meta-item"><span class="meta-label">Time:</span> <b>3 Hours</b></div>
+      <div class="meta-item">📖 2 Passages + 7 Chapters</div>
+      <div class="meta-item timer-box">⏳ <span id="timer">03:00:00</span></div>
+    </div>
+    <div class="progress-wrap">
+      <div class="progress-label">
+        <span>✨ Your Progress</span>
+        <span id="progressText">0 / 39 answered</span>
+      </div>
+      <div class="progress-track"><div class="progress-fill" id="progressFill"></div></div>
+    </div>
+  </header>
+
+  <nav class="tabs" id="tabs"></nav>
+
+  <main class="content-body">
+    <!-- SECTION A -->
+    <section class="sec" id="sec0">
+      <h2 class="sect">Section A — Reading Comprehension (20 Marks)</h2>
+      <p class="sub">Read each passage carefully and answer the questions. Each question carries 2 marks. ✏️</p>
+
+      <div class="passage-card">
+        <div class="passage-header">📜 Passage 1 — The Library That Floats</div>
+        <div class="passage-body">
+          On the Ganges at Patna, a blue-and-white boat drops anchor every morning near a sandy stretch of the riverbank. It is no ordinary ferry. Shelves line both sides of its cabin, and about fifteen hundred books — Hindi and English storybooks, science titles, biographies and comics — sit ready for young readers. The floating library began when a group of teachers noticed that children in the riverside slums and in families who live on boats hardly ever touched a book. Schools were far away, and the city's libraries were beyond their reach. So the district administration and a team of volunteers fitted out an old country boat with shelves, mats and a small solar-powered fan. Every day the boat stops at four or five points along the river. Children wade through the shallow water or climb in from their own boats, choose a book and read under the awning while the librarian marks their cards. A book may be kept for a week; there is no fee, only a promise to return it. In two years the boat has enrolled over two thousand young readers. Teachers at nearby schools say that regular borrowers now read faster and write more confidently in class. The boat costs little to run, but its real cargo, the volunteers say, is not books at all — it is the habit of reading.
+        </div>
+      </div>
+      <div id="rc1"></div>
+
+      <div class="passage-card" style="margin-top: 24px;">
+        <div class="passage-header">📜 Passage 2 — The Last Passenger</div>
+        <div class="passage-body">
+          Bhagalpur was waking up when Ramu Kaka pedalled his rickshaw out of the lane. The first train had just come in, and he hoped for a good fare before the sun grew harsh. His last passenger that morning was an old woman in a white sari who got down near the post office in a great hurry. As Ramu turned the rickshaw around, he spotted something glittering on the seat — a thin gold chain. He knew at once it was hers. Without a second thought, he pedalled back towards the post office. The old woman was still there, searching the ground near the gate, her spectacles on the tip of her nose and her hands trembling. "Maaji, is this yours?" Ramu asked, holding out the chain. She burst into tears and blessed him again and again, saying the chain had been her late husband's only gift to her. She pressed a five-hundred-rupee note into his hand. Ramu returned it gently. "Keep your blessing, Maaji," he said. "That is worth more." Word of the quiet rickshaw puller spread through the neighbourhood that week, and the old woman's son, a schoolteacher, put Ramu's story on the blackboard for his class to write about. Ramu himself remained unchanged. He still rises before the first train and still returns whatever his passengers leave behind — an umbrella, a lunchbox, a schoolbag, once even a sleeping puppy.
+        </div>
+      </div>
+      <div id="rc2"></div>
+    </section>
+
+    <!-- SECTION B -->
+    <section class="sec" id="sec1">
+      <h2 class="sect">Section B — Grammar &amp; Writing Skills (20 Marks)</h2>
+      <h3 class="part">Grammar Section (10 Marks) — Tense · Voice · Reported Speech · Subject–Verb Agreement · Modals</h3>
+      <p class="sub">Choose the correct option. Each question carries 1 mark. 🎯</p>
+      <div id="gram"></div>
+
+      <h3 class="part">Writing Section (10 Marks) — Formal Letter + Paragraph</h3>
+      <p class="sub">Write well-organised answers. Gemini AI will evaluate these! 🖊️</p>
+      <div id="writing"></div>
+    </section>
+
+    <!-- SECTION C -->
+    <section class="sec" id="sec2">
+      <h2 class="sect">Section C — Literature (60 Marks)</h2>
+      <p class="sub">From the NCERT <b>Kaveri</b> chapters: How I Taught My Grandmother to Read · Bharat Our Land · The Pot Maker · Gifts of Grace · Winds of Change · Canvas of Soil · I Cannot Remember My Mother</p>
+
+      <h3 class="part">Part 1: Multiple Choice Questions (20 Marks)</h3>
+      <p class="sub">Each question carries 2 marks. 💫</p>
+      <div id="litMCQ"></div>
+
+      <h3 class="part">Part 2: Short Answer Questions (20 Marks)</h3>
+      <p class="sub">Answer in 40–50 words. Each question carries 4 marks. ✍️</p>
+      <div id="litShort"></div>
+
+      <h3 class="part">Part 3: Long Answer Questions (20 Marks)</h3>
+      <p class="sub">Answer in 100–120 words. Each question carries 10 marks. 🌟</p>
+      <div id="litLong"></div>
+    </section>
+
+    <!-- SECTION D (SUBMIT) -->
+    <section class="sec" id="sec3">
+      <h2 class="sect">Submit &amp; Results</h2>
+      <div id="preSubmit" class="submit-card">
+        <h3>🎉 Ready to Finish Your Exam?</h3>
+        <p class="sub">Clicking below will grade your MCQs and use Gemini AI to test whether every answer is correct — and to evaluate your written answers!</p>
+        <button class="pr btn-sparkle" id="submitBtn">✨ Submit Exam &amp; Verify All Answers with Gemini ✨</button>
+        <p style="margin:14px 0 0;"><button class="btn-mini" id="testApiBtn" type="button">🔌 Test Gemini Connection</button> <span id="apiTestResult" style="font-size:0.8rem; color:var(--text-muted); margin-left:8px;"></span></p>
+        <p class="sub" style="margin-top:12px; margin-bottom:0;">Tip: use the 🪄 AI Check button beside any written question for instant feedback before submitting.</p>
+      </div>
+      <div id="results" style="margin-top:20px;"></div>
+    </section>
+  </main>
+
+  <footer class="navbtns">
+    <button class="pr btn-secondary" id="prevB">← Previous</button>
+    <button class="pr btn-primary" id="nextB">Next →</button>
+  </footer>
+</div>
+
+<script>
+// ===================== GEMINI API INTEGRATION (robust) =====================
+// The key below is VALID. Two things used to break grading silently:
+//  1) retired models (gemini-2.5-flash / 2.0-flash now return 404 for new users)
+//  2) transient HTTP 503 "high demand" spikes on ANY model
+// This client fails over across current models, retries busy ones, drops retired
+// ones and turns off "thinking" so replies come back fast — seamless end to end.
+
+const GEMINI_API_KEY = "AQ.Ab8RN6Itnww7X5GY8rcoc-6EjT1OM_R31ivunn5kvwEk4uh_Pw";
+const GEMINI_MODELS = [
+  "gemini-3.8-flash",        // newest — first choice
+  "gemini-3.7-flash",
+  "gemini-3.6-flash",
+  "gemini-3.5-flash",
+  "gemini-flash-lite-latest",
+  "gemini-3.1-flash-lite",
+  "gemini-3.5-flash-lite",
+  "gemini-flash-latest"
+];
+const RETRYABLE_CODES = [0, 408, 429, 500, 502, 503];   // 0 = network/timeout
+let lastModelUsed = null;
+const deadModels = new Set();   // models retired for this key (404)
+
+function sleep(ms) { return new Promise(function (r) { setTimeout(r, ms); }); }
+
+async function geminiOnce(model, promptText, wantJSON, useExtras) {
+  const generationConfig = { temperature: 0.3 };
+  if (wantJSON && useExtras) {
+    generationConfig.responseMimeType = "application/json";
+    generationConfig.thinkingConfig = { thinkingBudget: 0 };  // skip thinking = faster
+  } else if (useExtras) {
+    generationConfig.thinkingConfig = { thinkingBudget: 0 };
+  }
+  const ctrl = new AbortController();
+  const timer = setTimeout(function () { ctrl.abort(); }, 60000);
+  try {
+    const response = await fetch("https://generativelanguage.googleapis.com/v1beta/models/" + model + ":generateContent?key=" + GEMINI_API_KEY, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ contents: [{ parts: [{ text: promptText }] }], generationConfig: generationConfig }),
+      signal: ctrl.signal
+    });
+    clearTimeout(timer);
+    let result = null;
+    try { result = await response.json(); } catch (e) {}
+    if (!response.ok) {
+      return { ok: false, code: response.status, extras: useExtras, message: (result && result.error && result.error.message) || ("HTTP " + response.status) };
+    }
+    const parts = (result && result.candidates && result.candidates[0] && result.candidates[0].content && result.candidates[0].content.parts) || [];
+    for (let i = 0; i < parts.length; i++) {
+      if (parts[i] && typeof parts[i].text === "string" && parts[i].text.trim()) {
+        return { ok: true, code: 200, text: parts[i].text };
+      }
+    }
+    return { ok: false, code: 200, extras: useExtras, message: "empty response" };
+  } catch (err) {
+    clearTimeout(timer);
+    return { ok: false, code: 0, extras: useExtras, message: (err && err.message) || "network error" };
+  }
+}
+
+async function geminiGenerate(promptText, wantJSON, onStatus) {
+  for (let round = 1; round <= 3; round++) {
+    for (let mi = 0; mi < GEMINI_MODELS.length; mi++) {
+      const model = GEMINI_MODELS[mi];
+      if (deadModels.has(model)) continue;
+      if (onStatus) onStatus("contacting " + model + " — round " + round);
+      const res = await geminiOnce(model, promptText, wantJSON, true);
+      if (res.ok) { lastModelUsed = model; return res.text; }
+      if (res.code === 404) { deadModels.add(model); continue; }        // retired for this key
+      if (res.code === 400 && res.extras) {                              // extras unsupported → plain call
+        const res2 = await geminiOnce(model, promptText, wantJSON, false);
+        if (res2.ok) { lastModelUsed = model; return res2.text; }
+      }
+      if (RETRYABLE_CODES.indexOf(res.code) === -1) continue;            // permanent → next model
+    }
+    if (onStatus) onStatus("all models busy — cooling down before retry");
+    await sleep(1500 * round);
+  }
+  return null;
+}
+
+async function testGeminiConnection() {
+  const t0 = Date.now();
+  const text = await geminiGenerate("Reply with the single word: OK", false, null);
+  return { ok: !!text, model: lastModelUsed, ms: Date.now() - t0 };
+}
+
+function safeParseJSON(text) {
+  if (!text) return null;
+  try { return JSON.parse(text); } catch (e) {}
+  try {
+    const m = text.match(/\{[\s\S]*\}/);
+    if (m) return JSON.parse(m[0]);
+  } catch (e) {}
+  return null;
+}
+
+// ---- prompt builders (pure functions — no DOM) ----
+function buildSingleCheckPrompt(item, answer) {
+  return "You are a friendly but exacting CBSE Class 9 English examiner. Grade ONE answer.\n\n" +
+    "QUESTION (" + item.marks + " marks):\n" + item.prompt + "\n\n" +
+    "STUDENT ANSWER:\n" + answer + "\n\n" +
+    "MODEL ANSWER POINTS (for fair grading):\n" + item.model + "\n\n" +
+    "Reply ONLY with a JSON object of this shape:\n" +
+    '{"score": <number out of ' + item.marks + '>, "feedback": "<2-3 encouraging but precise sentences: what is good, what is missing, one tip>"}';
+}
+
+function buildFullEvaluationPrompt(mcqList, writtenAnswers) {
+  return "You are an expert CBSE English examiner verifying a Class 9 mock exam (NCERT Kaveri textbook).\n" +
+    "Task 1 — VERIFY every objective (MCQ) answer against the given correct answers. Report how many you checked, how many you agree with, and list any disagreements with a reason.\n" +
+    "Task 2 — EVALUATE every written answer strictly but kindly using the model points and marks.\n\n" +
+    "OBJECTIVE QUESTIONS & ANSWERS:\n" + JSON.stringify(mcqList, null, 1) + "\n\n" +
+    "WRITTEN QUESTIONS & STUDENT ANSWERS (with model points and marks):\n" + JSON.stringify(writtenAnswers, null, 1) + "\n\n" +
+    "Reply ONLY with a JSON object of exactly this shape:\n" +
+    '{\n' +
+    '  "verification": {"checked": 0, "agreements": 0, "disagreements": [{"question": "...", "note": "..."}], "comment": "one short line"},\n' +
+    '  "written": [{"id": "...", "score": 0, "feedback": "..."}],\n' +
+    '  "writtenTotal": 0,\n' +
+    '  "overallComment": "2-3 sentences for the student",\n' +
+    '  "strengths": "one short paragraph",\n' +
+    '  "improvements": "one short paragraph with concrete tips"\n' +
+    '}';
+}
+
+async function evaluateWithGemini(mcqSections, writtenAnswers, onStatus) {
+  const mcqList = [];
+  mcqSections.forEach(function (sec) {
+    sec.rows.forEach(function (row) {
+      mcqList.push({
+        section: sec.name,
+        question: row.q[0],
+        options: row.q[1],
+        studentAnswer: row.selIdx >= 0 ? row.q[1][row.selIdx] : "(left blank)",
+        correctAnswer: row.q[1][row.q[2]],
+        explanation: row.q[3]
+      });
+    });
+  });
+  const promptText = buildFullEvaluationPrompt(mcqList, writtenAnswers);
+  const text = await geminiGenerate(promptText, true, onStatus);
+  return safeParseJSON(text) || (text ? { raw: text } : null);
+}
+
+// ===================== QUESTION DATA =====================
+// Each MCQ: [question, [options], correctIndex, explanation]
+
+const rc1 = [
+  ["What makes the library described in the passage different from an ordinary library?",
+   ["It has only Hindi books", "It travels on a boat along the river", "It is inside a school building", "It is open only at night"], 1,
+   "The library is set up inside a boat that drops anchor at different points on the Ganges every day."],
+  ["Why was the floating library started?",
+   ["To help the district sell old boats", "Because children wanted comics only", "Because riverside and boat-dwelling children could not easily reach schools or libraries", "Because the city library was too crowded"], 2,
+   "Teachers noticed that children in riverside slums and boat families hardly ever touched a book, as schools and libraries were far away."],
+  ["Which word best replaces 'enrolled' as used in the passage?",
+   ["registered", "frightened", "carried", "sold"], 0,
+   "'Enrolled' means registered or signed up — over two thousand young readers have been registered on the boat."],
+  ["For how long may a reader keep a borrowed book?",
+   ["Two days", "One week", "One month", "A year"], 1,
+   "The passage says a book may be kept for a week, with no fee, only a promise to return it."],
+  ["What does the last sentence of the passage suggest about the library's greatest achievement?",
+   ["It earns a lot of money", "It has given children the habit of reading", "It carries the largest collection of books", "It has replaced schools in the villages"], 1,
+   "The 'real cargo' is not the books but the habit of reading that the boat has planted in the children."]
+];
+
+const rc2 = [
+  ["Why did Ramu pedal back towards the post office?",
+   ["He wanted a second fare", "He had forgotten his rickshaw there", "He found the old woman's gold chain and wanted to return it", "The old woman had called him back"], 2,
+   "Ramu spotted the gold chain on the seat and knew at once it belonged to the old woman who had just got down."],
+  ["What made the gold chain so precious to the old woman?",
+   ["It was very expensive", "It had been her late husband's only gift to her", "It belonged to a temple", "It was her daughter's wedding chain"], 1,
+   "She told Ramu, with tears in her eyes, that the chain was the only gift her late husband had given her."],
+  ["How did the neighbourhood learn about Ramu's deed?",
+   ["Ramu told everyone at the rickshaw stand", "A newspaper printed his photograph", "The old woman's son put the story on his class blackboard", "The postmaster announced it"], 2,
+   "The old woman's son, a schoolteacher, wrote Ramu's story on the blackboard for his class to write about."],
+  ["The phrase 'remained unchanged' suggests that Ramu:",
+   ["became a rich man", "continued his simple, honest routine just as before", "stopped driving the rickshaw", "moved to another city"], 1,
+   "Ramu did not let the praise change him — he still rises before the first train and returns lost things."],
+  ["What is the central message of the story?",
+   ["Honesty and kindness are greater than any reward", "Gold chains should be kept safely", "Rickshaw pullers earn very little", "Old people travel by train"], 0,
+   "Ramu returns the chain and refuses the money, showing that honesty expects no reward — that is the heart of the story."]
+];
+
+const gramData = [
+  ["By the time we reached the station, the train ______.", ["has left", "had left", "was leaving", "leaves"], 1,
+   "Tense — Past Perfect: the earlier of two past actions ('had left') takes the past perfect.", "Tense"],
+  ["Listen! Someone ______ the flute in the next room.", ["plays", "is playing", "played", "has played"], 1,
+   "Tense — Present Continuous for an action happening right at the moment of speaking (Listen!).", "Tense"],
+  ["Change to Passive Voice: 'The gardener waters the plants every day.'",
+   ["The plants are watered by the gardener every day.", "The plants were watered by the gardener every day.", "The plants water the gardener every day.", "The plants have watered by the gardener every day."], 0,
+   "Voice — Simple Present Passive: object + is/are + past participle + by + subject.", "Voice"],
+  ["Change to Passive Voice: 'They will complete the bridge next year.'",
+   ["The bridge is completed by them next year.", "The bridge was completed by them next year.", "The bridge will be completed by them next year.", "The bridge will complete by them next year."], 2,
+   "Voice — Simple Future Passive: will be + past participle.", "Voice"],
+  ["Reported Speech: He said, 'I am leaving for Delhi tonight.'",
+   ["He said that he is leaving for Delhi tonight.", "He said that he was leaving for Delhi that night.", "He said that he was leaving for Delhi tonight.", "He said that he had left for Delhi that night."], 1,
+   "Reported Speech — the reporting verb 'said' is in the past, so the tense shifts back (am → was) and 'tonight' becomes 'that night'.", "Reported Speech"],
+  ["Reported Speech: The teacher said to us, 'Do not waste your time.'",
+   ["The teacher said us not to waste time.", "The teacher told us not to waste our time.", "The teacher told to us to not waste time.", "The teacher said us to not waste our time."], 1,
+   "Reported Speech — 'said to' becomes 'told'; a negative command is reported with 'not to' + verb.", "Reported Speech"],
+  ["Each of the boys ______ been given a prize.", ["have", "has", "are", "were"], 1,
+   "Subject–Verb Agreement — 'Each of + plural noun' always takes a singular verb ('has').", "Subject–Verb Agreement"],
+  ["Neither the teacher nor the students ______ present in the hall.", ["was", "were", "is", "has been"], 1,
+   "Subject–Verb Agreement — with 'neither...nor', the verb agrees with the nearer subject ('students' → 'were'). This is the proximity rule.", "Subject–Verb Agreement"],
+  ["You ______ wear a helmet while riding a two-wheeler. It is the law.", ["must", "might", "would", "shall"], 0,
+   "Modals — 'must' expresses strong obligation or necessity, especially a rule or law.", "Modals"],
+  ["Sanya is not in class today. She ______ be ill, but I am not certain.", ["must", "might", "would", "shall"], 1,
+   "Modals — 'might' expresses a weak possibility or guess when we are not certain.", "Modals"]
+];
+
+const litMCQData = [
+  ["In 'How I Taught My Grandmother to Read', 'Kashi Yatre' was:",
+   ["a serial story in the Kannada magazine Karmaveera", "a guidebook for the Kashi pilgrimage", "a Tamil newspaper column", "a collection of poems by Triveni"], 0,
+   "The magazine Karmaveera carried 'Kashi Yatre' as a serialised story, which the grandmother waited for eagerly every week.", "How I Taught My Grandmother to Read"],
+  ["Why did the grandmother touch Sudha's feet at the end of the story?",
+   ["To bless her before the festival", "To show respect for her teacher, whatever the age", "To ask for the gift of a novel", "To apologise for making fun of her"], 1,
+   "She said, 'I am touching the feet of a teacher' — a teacher deserves respect irrespective of gender and age.", "How I Taught My Grandmother to Read"],
+  ["In 'Bharat Our Land', 'Himavant' refers to:",
+   ["the Himalayas", "the river Ganga", "the Thar Desert", "the Vindhya hills"], 0,
+   "Himavant is the Sanskrit name for the Himalayas — the 'mighty' mountain range the poet proudly claims as ours.", "Bharat Our Land"],
+  ["Why did Sentila's mother Arenla want her to learn weaving instead of pottery?",
+   ["Weaving was cleaner, easier and earned more money", "Weaving was a dying art", "Pottery needed a licence", "Sentila had weak hands"], 0,
+   "Arenla knew the hardships of pottery — clay fetched from far, exhausting labour and little pay — and wanted an easier, better-paying life for her daughter.", "The Pot Maker"],
+  ["What was Sentila's real problem while learning to make pots, as Onula pointed out?",
+   ["She lacked talent", "She was too tense and nervous", "Her clay was of poor quality", "She did not know the tools"], 1,
+   "Onula saw that Sentila's excessive tension made the clay refuse the right shape — the problem was nervousness, not lack of talent.", "The Pot Maker"],
+  ["In 'Gifts of Grace', the shoemakers 'affirm' the quality of their work. 'Affirm' here means:",
+   ["to declare with confidence", "to make adjustments in", "to label the goods", "to justify the excuses"], 0,
+   "To affirm is to state something firmly and confidently — the shoemakers proudly stand by the strength of their shoes.", "Gifts of Grace"],
+  ["The word 'pankha' comes from 'pankh', which means:",
+   ["a bird's feather", "a palm leaf", "a bamboo strip", "a cooling breeze"], 0,
+   "'Winds of Change' explains that the word comes from 'pankh' — the feather of a bird; the ancient 'pankhi' was a small plumed fan.", "Winds of Change"],
+  ["Which of these is a pankha tradition of Bengal mentioned in 'Winds of Change'?",
+   ["sola fans made of water grass", "zardozi gold-thread fans", "brass-engraved temple fans", "hand-stitched leather fans of Kutch"], 0,
+   "Bengal is known for delicate sola (water grass) fans and the Tal Patar Pankha (palm-leaf fan); zardozi and brass fans belong to Rajasthan, leather fans to Kutch.", "Winds of Change"],
+  ["The metaphor 'Brushstrokes of seeds' in 'Canvas of Soil' suggests that:",
+   ["seeds are placed as carefully as a painter's brushstrokes", "seeds grow only in spring", "gardeners paint on real canvas", "seeds are round like brushes"], 0,
+   "The poet compares the gardener to a painter — each seed is a loving, careful brushstroke on the canvas of the earth.", "Canvas of Soil"],
+  ["In 'I Cannot Remember My Mother', the fragrance of shiuli flowers in the early autumn morning reminds the poet of:",
+   ["the scent of his mother", "the temple priest", "his school days", "his grandmother's garden"], 0,
+   "The smell of the shiuli (coral jasmine) flowers and the morning temple service comes to him as the very scent of his mother.", "I Cannot Remember My Mother"]
+];
+
+const writingData = [
+  {
+    id: "wrt_0",
+    title: "Formal Letter — To the Editor",
+    prompt: "You are Aarav/Aarohi of Class IX, S. K. Memorial High School, Bhagalpur. Traditional handicrafts like the hand-made pankha (hand fan) are slowly disappearing as machines take over. Write a formal letter (100–150 words) to the Editor of a national newspaper highlighting the need to save such crafts and suggesting ways to revive them. (5 Marks — Content: 2, Expression: 2, Format: 1)",
+    marks: 5,
+    target: [100, 150],
+    model: "Format: sender's address, date, receiver's designation & address, subject, salutation (Sir/Madam), body, complimentary close (Yours truly/faithfully), name & class. Content points: pankha and similar crafts fading due to electric fans and machines; artisans (often women) losing livelihood; these crafts carry our culture and regional identity; suggestions — exhibitions and workshops, 'Buy Handmade' campaigns, help from government and schools, craft lessons in schools. Language: formal, polite, no slang."
+  },
+  {
+    id: "wrt_1",
+    title: "Descriptive Paragraph Writing",
+    prompt: "Write a descriptive paragraph (100–120 words) on 'The Craftsperson at Work'. Describe a potter, weaver, carpenter or any craftsperson at work, using sensory details — what you see, hear and feel. (5 Marks — Content: 2, Organisation: 2, Language: 1)",
+    marks: 5,
+    target: [100, 120],
+    model: "Content: a clear picture of one craftsperson at work with specific sensory details (e.g. the potter's wheel humming, wet clay shining, fingers shaping the lump, pots baking in the kiln). Organisation: logical order (setting → process → result/feeling), a topic sentence and a closing sentence. Language: vivid adjectives and verbs, correct tense, no spelling errors."
+  }
+];
+
+const litShortData = [
+  {
+    id: "lits_0",
+    title: "How I Taught My Grandmother to Read",
+    prompt: "Why did the grandmother suddenly want to learn to read at the age of sixty-two? What does her decision tell us about her? (4 Marks — answer in 40–50 words)",
+    marks: 4,
+    target: [40, 50],
+    model: "Points: she missed the latest episode of 'Kashi Yatre' when Sudha went to a wedding and felt helpless and dependent; she realised that money means nothing without independence ('what use is money when I cannot be independent'); she resolved to learn so she could read on her own. Shows her determination, self-respect, dignity and the will to be independent at any age."
+  },
+  {
+    id: "lits_1",
+    title: "The Pot Maker",
+    prompt: "What important message did the village elders give about traditional skills like pottery? Why does this message matter even today? (4 Marks — answer in 40–50 words)",
+    marks: 4,
+    target: [40, 50],
+    model: "Points: the elders said skills like pottery do not belong to any individual — they belong to the whole community; they symbolise the tradition and history of the people; every expert has a duty to pass the skill to the next generation. It matters today because many traditional crafts are dying out as artisans refuse to teach or children move to other jobs; if skills are not shared, they disappear forever."
+  },
+  {
+    id: "lits_2",
+    title: "Winds of Change",
+    prompt: "Why has the pankha almost disappeared from our daily life? Suggest any two ways in which traditional crafts like it can be saved. (4 Marks — answer in 40–50 words)",
+    marks: 4,
+    target: [40, 50],
+    model: "Points: electric fans, coolers and air conditioners replaced hand fans in daily use, so demand fell and the pankha became only a decorative or tourist item. Ways to save: (1) celebrate and promote the craft through exhibitions, fairs and workshops so people appreciate and buy it; (2) support the artisans — especially women workers — with fair prices, training and markets; schools can teach about crafts; buying handmade products keeps livelihoods alive."
+  },
+  {
+    id: "lits_3",
+    title: "I Cannot Remember My Mother",
+    prompt: "How does the poet of 'I Cannot Remember My Mother' feel his mother's presence in his daily life even though he cannot remember her clearly? (4 Marks — answer in 40–50 words)",
+    marks: 4,
+    target: [40, 50],
+    model: "Points: three memories carry her presence — (1) while he plays, a lullaby tune hovers over his playthings (she used to hum while rocking his cradle); (2) the smell of shiuli flowers and the morning temple service in early autumn comes to him as the scent of his mother; (3) looking at the wide blue sky from his window, he feels the stillness of her gaze spread over the whole sky. Her love is calm, eternal and everywhere in nature."
+  },
+  {
+    id: "lits_4",
+    title: "Canvas of Soil",
+    prompt: "How does 'Canvas of Soil' present gardening as an art form? Give two images from the poem to support your answer. (4 Marks — answer in 40–50 words)",
+    marks: 4,
+    target: [40, 50],
+    model: "Points: the earth is a rich palette where the gardener's dreams flourish as seeds; seeds are 'brushstrokes' planted with a painter's care ('Brushstrokes of seeds, planted true'); each garden plot is a wide canvas 'where art and life coincide'; the blooms resemble a painting by Mother Nature and gardens become still-life paintings. Thus the gardener is an artist and gardening blends creativity with natural growth."
+  }
+];
+
+const litLongData = [
+  {
+    id: "litl_0",
+    title: "How I Taught My Grandmother to Read + The Pot Maker",
+    prompt: "Both Krishtakka in 'How I Taught My Grandmother to Read' and Sentila in 'The Pot Maker' refuse to give up on their dreams. Compare their struggles and explain how their teachers helped them succeed. What lessons do their stories teach the youth of today? (100–120 words) (10 Marks — Content: 5, Expression: 5)",
+    marks: 10,
+    target: [100, 120],
+    model: "Content points: Krishtakka — 62 years old, never went to school, felt helpless without reading 'Kashi Yatre', resolved to learn with Dasara/Saraswati Pooja as her deadline, practised daily, and read independently on the festival day. Sentila — dreamed of pottery though her mother Arenla wanted her to weave; secretly watched potters; failed at first under her mother's strict teaching because of tension. Teachers: Sudha patiently taught her grandmother and was honoured as a guru (feet-touching scene); Onula gently showed Sentila that nervousness, not lack of talent, was the problem — 'a new pot maker was born'. Lessons: age and gender are no bar to learning; determination plus a good teacher can overcome anything; traditional skills must be passed to the next generation; respect your teachers. Expression: clear comparison, paragraphing, correct grammar."
+  },
+  {
+    id: "litl_1",
+    title: "Bharat Our Land + Gifts of Grace",
+    prompt: "'Bharat Our Land' celebrates the treasures India possesses, while 'Gifts of Grace' celebrates the everyday work of her people. How do these two poems together present a complete picture of our country? (100–120 words) (10 Marks — Content: 5, Expression: 5)",
+    marks: 10,
+    target: [100, 120],
+    model: "Content points: 'Bharat Our Land' (Subramania Bharati) — proud claim of the mighty Himavant, the generous Ganga, the sacred Upanishads, gallant warriors, sages who sanctified the land, the divinest music, Brahma-knowledge and the Buddha's dhamma, the sunny golden land of hoary antiquity; refrain 'she's peerless, let's praise her!' evokes patriotism. 'Gifts of Grace' — honours vocations: craftspersons with colours and fabrics, carpenters, electricians who light our homes, boatmen singing with their nets, shoemakers who affirm their sturdy shoes 'for the feet that walk, dance, run, jump, return home', cooks, designers, masons, musicians with lutes — each celebrating work that 'belongs to them and to none else'. Together: India's natural, spiritual and intellectual treasures (Bharat Our Land) are matched by the dignity, skill and song of her working people (Gifts of Grace) — heritage plus hands that sustain it. Respect for every vocation makes society whole."
+  }
+];
+
+// ===================== RENDERING =====================
+function mcqHTML(q, idx, prefix, marks) {
+  let html = '<div class="q-card">';
+  html += '<div class="q-head"><span class="marks-chip">' + marks + ' Mark' + (marks > 1 ? 's' : '') + '</span>';
+  if (q[4]) html += '<span class="topic-chip">' + q[4] + '</span>';
+  html += '</div>';
+  html += '<p class="q-title">' + (idx + 1) + '. ' + q[0] + '</p><div class="opts">';
+  q[1].forEach(function (opt, optIdx) {
+    html += '<label class="opt-label"><input type="radio" name="' + prefix + '_' + idx + '" value="' + optIdx + '"> ' + opt + '</label>';
+  });
+  html += '</div></div>';
+  return html;
+}
+
+function renderMCQGroup(containerId, questions, prefix, marks) {
+  const container = document.getElementById(containerId);
+  if (!container) return;
+  container.innerHTML = questions.map((q, i) => mcqHTML(q, i, prefix, marks)).join('');
+}
+
+function renderTextGroup(containerId, items) {
+  const container = document.getElementById(containerId);
+  if (!container) return;
+  container.innerHTML = '';
+  items.forEach(function (item) {
+    const lo = item.target[0], hi = item.target[1];
+    const html =
+      '<div class="q-card">' +
+        '<div class="q-head"><span class="marks-chip">' + item.marks + ' Marks</span><span class="topic-chip">' + item.title + '</span></div>' +
+        '<p class="q-title">' + item.prompt + '</p>' +
+        '<textarea id="' + item.id + '" placeholder="Type your answer here..." oninput="updateWordCount(\'' + item.id + '\', ' + lo + ', ' + hi + ')"></textarea>' +
+        '<div class="q-tools">' +
+          '<span class="wordcount" id="wc_' + item.id + '">0 words · aim ' + lo + '–' + hi + '</span>' +
+          '<button type="button" class="ai-check" id="btn_' + item.id + '" onclick="aiCheckOne(\'' + item.id + '\')">🪄 AI Check this answer</button>' +
+        '</div>' +
+        '<div class="instant-feedback" id="fb_' + item.id + '"></div>' +
+      '</div>';
+    container.insertAdjacentHTML('beforeend', html);
+  });
+}
+
+const ALL_WRITTEN = writingData.concat(litShortData, litLongData);
+const WRITTEN_BY_ID = {};
+ALL_WRITTEN.forEach(function (w) { WRITTEN_BY_ID[w.id] = w; });
+
+function updateWordCount(id, lo, hi) {
+  const val = document.getElementById(id).value.trim();
+  const words = val ? val.split(/\s+/).filter(Boolean).length : 0;
+  const el = document.getElementById('wc_' + id);
+  el.textContent = words + ' words · aim ' + lo + '–' + hi;
+  el.className = 'wordcount' + (words >= lo && words <= hi ? ' good' : (words > 0 ? ' warn' : ''));
+  updateProgress();
+}
+
+renderMCQGroup('rc1', rc1, 'rc1', 2);
+renderMCQGroup('rc2', rc2, 'rc2', 2);
+renderMCQGroup('gram', gramData, 'gram', 1);
+renderTextGroup('writing', writingData);
+renderMCQGroup('litMCQ', litMCQData, 'lit', 2);
+renderTextGroup('litShort', litShortData);
+renderTextGroup('litLong', litLongData);
+
+// ===================== TABS & NAV =====================
+const tabs = ['Reading', 'Grammar & Writing', 'Literature', 'Submit & Results'];
+const tabsEl = document.getElementById('tabs');
+tabs.forEach(function (t, i) {
+  const b = document.createElement('button');
+  b.textContent = t;
+  b.onclick = function () { showSec(i); };
+  tabsEl.appendChild(b);
+});
+
+let curSec = 0;
+function showSec(index) {
+  document.querySelectorAll('.sec').forEach(function (s) { s.classList.remove('show'); });
+  document.getElementById('sec' + index).classList.add('show');
+  tabsEl.querySelectorAll('button').forEach(function (btn, j) { btn.classList.toggle('active', j === index); });
+  curSec = index;
+  document.getElementById('prevB').disabled = index === 0;
+  document.getElementById('nextB').disabled = index === 3;
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+document.getElementById('prevB').onclick = function () { if (curSec > 0) showSec(curSec - 1); };
+document.getElementById('nextB').onclick = function () { if (curSec < 3) showSec(curSec + 1); };
+showSec(0);
+
+// ===================== TIMER =====================
+let secondsLeft = 3 * 3600;
+let examSubmitted = false;
+const timerInterval = setInterval(function () {
+  if (examSubmitted) { clearInterval(timerInterval); return; }
+  if (secondsLeft > 0) {
+    secondsLeft--;
+    const h = String(Math.floor(secondsLeft / 3600)).padStart(2, '0');
+    const m = String(Math.floor((secondsLeft % 3600) / 60)).padStart(2, '0');
+    const s = String(secondsLeft % 60).padStart(2, '0');
+    document.getElementById('timer').textContent = h + ':' + m + ':' + s;
+    const tbox = document.querySelector('.timer-box');
+    if (secondsLeft <= 300) tbox.classList.add('flash');
+  } else if (!examSubmitted) {
+    clearInterval(timerInterval);
+    alert("Time is up! Your exam will be submitted automatically. All the best! 🌸");
+    document.getElementById('submitBtn').click();
+  }
+}, 1000);
+
+// ===================== PROGRESS =====================
+function updateProgress() {
+  let answered = 0;
+  const mcqGroups = [['rc1', rc1], ['rc2', rc2], ['gram', gramData], ['lit', litMCQData]];
+  mcqGroups.forEach(function (g) {
+    g[1].forEach(function (q, i) {
+      if (document.querySelector('input[name="' + g[0] + '_' + i + '"]:checked')) answered++;
+    });
+  });
+  ALL_WRITTEN.forEach(function (w) {
+    const el = document.getElementById(w.id);
+    if (el && el.value.trim().length > 0) answered++;
+  });
+  const total = 30 + ALL_WRITTEN.length;
+  document.getElementById('progressText').textContent = answered + ' / ' + total + ' answered';
+  document.getElementById('progressFill').style.width = (answered / total * 100) + '%';
+}
+document.addEventListener('change', updateProgress);
+
+// ===================== INSTANT PER-QUESTION AI CHECK =====================
+async function aiCheckOne(id) {
+  const item = WRITTEN_BY_ID[id];
+  const answerEl = document.getElementById(id);
+  const btn = document.getElementById('btn_' + id);
+  const fb = document.getElementById('fb_' + id);
+  const answer = answerEl.value.trim();
+  if (!answer) {
+    fb.className = 'instant-feedback show';
+    fb.textContent = '✏️ Write an answer first, then press the check button!';
+    return;
+  }
+  btn.disabled = true;
+  btn.innerHTML = '⏳ Checking...';
+  fb.className = 'instant-feedback show';
+  fb.textContent = '🤖 Gemini is reading your answer...';
+
+  const promptText = buildSingleCheckPrompt(item, answer);
+  const text = await geminiGenerate(promptText, true, function (status) {
+    fb.textContent = '🤖 Gemini: ' + status + '...';
+  });
+  const parsed = safeParseJSON(text);
+  btn.disabled = false;
+  btn.innerHTML = '🪄 AI Check this answer';
+  if (parsed && typeof parsed.score === 'number') {
+    fb.textContent = 'Score: ' + parsed.score + ' / ' + item.marks + ' 🌸\n' + (parsed.feedback || '');
+  } else if (text) {
+    fb.textContent = text;
+  } else {
+    fb.textContent = '⚠️ Gemini could not be reached right now (check your internet connection). Your answer is safe — it will be evaluated when you submit the exam.';
+  }
+}
+
+// ===================== FULL SUBMISSION & VERIFICATION =====================
+function gradeMCQGroup(data, prefix, marks) {
+  let score = 0;
+  const rows = data.map(function (q, i) {
+    const selected = document.querySelector('input[name="' + prefix + '_' + i + '"]:checked');
+    const selIdx = selected ? parseInt(selected.value) : -1;
+    const correct = selIdx === q[2];
+    if (correct) score += marks;
+    return { q: q, selIdx: selIdx, correct: correct, marks: marks, prefix: prefix, i: i };
+  });
+  return { score: score, rows: rows };
+}
+
+function reviewCardHTML(row) {
+  const q = row.q;
+  const yours = row.selIdx >= 0 ? q[1][row.selIdx] : '— no answer —';
+  const right = q[1][q[2]];
+  let h = '<div class="review-q ' + (row.correct ? 'is-correct' : 'is-wrong') + '">';
+  h += '<div class="rq-title">' + (row.i + 1) + '. ' + q[0] + '</div>';
+  h += '<div class="yours">Your answer: <b>' + yours + '</b> — <span class="' + (row.correct ? 'tag-ok' : 'tag-bad') + '">' + (row.correct ? '✔ Correct (+' + row.marks + ')' : '✘ Incorrect (0)') + '</span></div>';
+  if (!row.correct) h += '<div class="yours">Correct answer: <b>' + right + '</b></div>';
+  h += '<div class="key-note">💡 ' + q[3] + '</div>';
+  h += '</div>';
+  return h;
+}
+
+document.getElementById('submitBtn').onclick = async function () {
+  const submitBtn = document.getElementById('submitBtn');
+  if (examSubmitted) return;
+  examSubmitted = true;
+  submitBtn.disabled = true;
+  const setStatus = function (s) {
+    submitBtn.innerHTML = '<span class="spinner"></span> Gemini AI: ' + s + '...';
+  };
+  setStatus('grading MCQs &amp; preparing verification');
+
+  // --- local objective grading ---
+  const g1 = gradeMCQGroup(rc1, 'rc1', 2);
+  const g2 = gradeMCQGroup(rc2, 'rc2', 2);
+  const g3 = gradeMCQGroup(gramData, 'gram', 1);
+  const g4 = gradeMCQGroup(litMCQData, 'lit', 2);
+  const readingScore = g1.score + g2.score;
+  const gramScore = g3.score;
+  const litMcqScore = g4.score;
+  const objectiveTotal = readingScore + gramScore + litMcqScore; // max 50
+
+  // --- collect written answers ---
+  const writtenAnswers = ALL_WRITTEN.map(function (w) {
+    return {
+      id: w.id,
+      section: (w.id.indexOf('wrt') === 0 ? 'Writing' : (w.id.indexOf('lits') === 0 ? 'Literature Short' : 'Literature Long')),
+      question: w.prompt,
+      marks: w.marks,
+      modelPoints: w.model,
+      answer: document.getElementById(w.id).value.trim() || "No Answer"
+    };
+  });
+
+  // --- Gemini: verify ALL answers + grade written ---
+  const aiResult = await evaluateWithGemini(
+    [
+      { name: 'Reading Comprehension', rows: g1.rows.concat(g2.rows) },
+      { name: 'Grammar', rows: g3.rows },
+      { name: 'Literature MCQ', rows: g4.rows }
+    ],
+    writtenAnswers,
+    setStatus
+  );
+
+  // per-written-question scores (AI or fallback)
+  const aiBy = {};
+  let writtenTotalAI = 0;
+  if (aiResult && aiResult.written && Array.isArray(aiResult.written)) {
+    aiResult.written.forEach(function (w) {
+      let sc = Number(w.score);
+      const meta = WRITTEN_BY_ID[w.id];
+      const max = meta ? meta.marks : 0;
+      if (isNaN(sc)) sc = 0;
+      sc = Math.max(0, Math.min(max, sc));
+      aiBy[w.id] = { score: sc, feedback: w.feedback || '' };
+      writtenTotalAI += sc;
+    });
+    ALL_WRITTEN.forEach(function (w) {
+      if (!aiBy[w.id]) aiBy[w.id] = { score: 0, feedback: 'Not evaluated by AI.' };
+    });
+  } else {
+    ALL_WRITTEN.forEach(function (w) {
+      const ans = document.getElementById(w.id).value.trim();
+      aiBy[w.id] = { score: null, feedback: ans ? ('⚠️ AI evaluation unavailable. Model answer points:\n' + w.model) : ('❌ No answer written. Model answer points:\n' + w.model) };
+    });
+    writtenTotalAI = null;
+  }
+
+  const writingAI = (aiBy['wrt_0'].score !== null ? aiBy['wrt_0'].score : 0) + (aiBy['wrt_1'].score !== null ? aiBy['wrt_1'].score : 0);
+  let shortAI = 0, longAI = 0;
+  litShortData.forEach(function (w) { shortAI += (aiBy[w.id].score || 0); });
+  litLongData.forEach(function (w) { longAI += (aiBy[w.id].score || 0); });
+
+  const grandTotal = writtenTotalAI === null ? null : objectiveTotal + writtenTotalAI;
+
+  // grade emoji
+  let gradeLine = '';
+  if (grandTotal === null) gradeLine = '🤖 AI grading paused — see the model answers below!';
+  else if (grandTotal >= 90) gradeLine = '🌟 Outstanding! Suga-suga, you are a star! 👑';
+  else if (grandTotal >= 75) gradeLine = '💖 Excellent! K-drama main-character energy! ✨';
+  else if (grandTotal >= 60) gradeLine = '✨ Good job! Keep shining like MJ on stage! 🌸';
+  else if (grandTotal >= 40) gradeLine = '🌸 Decent effort — revise the chapters and try again! 💪';
+  else gradeLine = '💪 Don\u2019t give up! Even Krishtakka started with the alphabet. You can do this!';
+
+  function writtenReviewHTML(list) {
+    return list.map(function (w) {
+      const a = aiBy[w.id];
+      const scoreTxt = a.score === null ? '—' : (a.score + ' / ' + w.marks);
+      return '<div class="written-review">' +
+        '<div class="q-head" style="margin-bottom:6px;"><b>' + w.title + '</b><span class="score-pill">' + scoreTxt + '</span></div>' +
+        '<div style="font-size:0.8rem; color:var(--text-muted);">' + w.prompt + '</div>' +
+        '<div class="fb">' + (a.feedback || '—') + '</div>' +
+        '</div>';
+    }).join('');
+  }
+
+  // verification block
+  let verifyHTML = '';
+  if (aiResult && aiResult.verification) {
+    const v = aiResult.verification;
+    const dis = (v.disagreements && v.disagreements.length) ?
+      v.disagreements.map(function (d) { return '• ' + d.question + ' — ' + d.note; }).join('\n') : 'None — Gemini agrees with the answer key on every question! 🎯';
+    verifyHTML =
+      '<div class="ai-eval-box"><h4 style="margin-top:0; color:#8b5cf6;">🤖 Gemini Verification of ALL Answers:</h4>' +
+      'Grading model: ' + (lastModelUsed || 'auto') + '\n' +
+      'Checked: ' + (v.checked || 30) + ' objective answers · Agreed: ' + (v.agreements || 30) + '\n' +
+      (v.comment ? v.comment + '\n\n' : '\n') +
+      'Disagreements with the answer key:\n' + dis + '</div>';
+  } else if (aiResult && aiResult.raw) {
+    verifyHTML = '<div class="ai-eval-box"><h4 style="margin-top:0; color:#8b5cf6;">🤖 Gemini Evaluation:</h4>' + aiResult.raw + '</div>';
+  } else {
+    verifyHTML = '<div class="ai-eval-box"><h4 style="margin-top:0; color:#8b5cf6;">🤖 Gemini Verification:</h4>⚠️ Gemini could not be reached (check your internet connection). Your MCQs were graded with the built-in answer key, and model answers for the written sections are shown below.</div>';
+  }
+
+  let overallHTML = '';
+  if (aiResult && aiResult.overallComment) {
+    overallHTML =
+      '<div class="ai-eval-box"><h4 style="margin-top:0; color:#8b5cf6;">🌸 Examiner\u2019s Report Card:</h4>' +
+      aiResult.overallComment + '\n\n💚 Strengths: ' + (aiResult.strengths || '—') +
+      '\n\n💛 Work on: ' + (aiResult.improvements || '—') + '</div>';
+  }
+
+  const totalDisplay = grandTotal === null ? '—' : grandTotal;
+
+  document.getElementById('results').innerHTML =
+    '<div class="score-banner">' +
+      '<h3>Exam Evaluation Complete! 🎉</h3>' +
+      '<p style="margin-bottom:4px;">Your Grand Total</p>' +
+      '<div class="big">' + totalDisplay + ' / 100</div>' +
+      '<div class="grade-line">' + gradeLine + '</div>' +
+    '</div>' +
+    '<div class="breakdown"><table>' +
+      '<tr><td>📖 Reading Comprehension (local key)</td><td>' + readingScore + ' / 20</td></tr>' +
+      '<tr><td>🎯 Grammar (local key)</td><td>' + gramScore + ' / 10</td></tr>' +
+      '<tr><td>🖊️ Writing — Letter + Paragraph (Gemini)</td><td>' + writingAI + ' / 10</td></tr>' +
+      '<tr><td>📚 Literature MCQs (local key)</td><td>' + litMcqScore + ' / 20</td></tr>' +
+      '<tr><td>✍️ Literature Short Answers (Gemini)</td><td>' + shortAI + ' / 20</td></tr>' +
+      '<tr><td>🌟 Literature Long Answers (Gemini)</td><td>' + longAI + ' / 20</td></tr>' +
+      '<tr><td>TOTAL</td><td>' + totalDisplay + ' / 100</td></tr>' +
+    '</table></div>' +
+    verifyHTML +
+    overallHTML +
+    '<h3 class="section-divider">📖 Section A Review — Passage 1</h3>' + g1.rows.map(reviewCardHTML).join('') +
+    '<h3 class="section-divider">📖 Section A Review — Passage 2</h3>' + g2.rows.map(reviewCardHTML).join('') +
+    '<h3 class="section-divider">🎯 Section B Review — Grammar</h3>' + g3.rows.map(reviewCardHTML).join('') +
+    '<h3 class="section-divider">🖊️ Section B Review — Writing (AI)</h3>' + writtenReviewHTML(writingData) +
+    '<h3 class="section-divider">📚 Section C Review — Literature MCQs</h3>' + g4.rows.map(reviewCardHTML).join('') +
+    '<h3 class="section-divider">✍️ Section C Review — Short Answers (AI)</h3>' + writtenReviewHTML(litShortData) +
+    '<h3 class="section-divider">🌟 Section C Review — Long Answers (AI)</h3>' + writtenReviewHTML(litLongData) +
+    '<div class="result-actions">' +
+      '<button class="btn-mini" onclick="window.print()">🖨️ Print / Save as PDF</button>' +
+      '<button class="btn-mini" onclick="location.reload()">🔁 Take the Test Again</button>' +
+    '</div>';
+
+  document.getElementById('preSubmit').style.display = 'none';
+  showSec(3);
+};
+
+// ---- connection self-test button ----
+document.getElementById('testApiBtn').onclick = async function () {
+  const btn = document.getElementById('testApiBtn');
+  const out = document.getElementById('apiTestResult');
+  btn.disabled = true;
+  out.textContent = '⏳ Testing connection...';
+  const r = await testGeminiConnection();
+  btn.disabled = false;
+  out.textContent = r.ok
+    ? '✅ Connected via ' + r.model + ' (' + (r.ms / 1000).toFixed(1) + 's) — ready to grade!'
+    : '❌ Could not reach Gemini right now. Check your internet — grading will auto-retry when you submit.';
+  out.style.color = r.ok ? '#16a34a' : '#dc2626';
+};
+</script>
+</body>
+</html>
